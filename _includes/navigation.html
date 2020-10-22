@@ -2,6 +2,13 @@
     <div class="nav-bar">
     <a class="scanapi-logo" href="/"><img src="{{ "/assets/images/logo-white-on-transparent.png" | relative_url }}"/></a>
         <nav class="default-navigation">
+            <span>
+                <a href="#" onclick="darkModeTheme()">
+                    <svg style="vertical-align: middle; width:30px;height:30px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,18V6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" />
+                    </svg>
+                </a>
+            </span>
             {% for item in site.data.navigation %}
                 <a href="{{ item.link | relative_url}}" {% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
             {% endfor %}

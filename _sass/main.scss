@@ -1,5 +1,6 @@
 $base-gray: #232020;
 $light-color: #FFFFFF;
+$darker-color-text: #f0f8ff;
 $darker-color: #161616;
 $primary-color: #FF7163;
 $normal-font-size: 18px;
@@ -30,6 +31,12 @@ body {
         color: $primary-color;
         opacity: 1;
     }
+}
+
+.dark-mode {
+    background-color: $darker-color;
+    color: $darker-color-text;
+    transition: all 0.3s;
 }
 
 nav {

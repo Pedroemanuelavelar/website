@@ -3,6 +3,16 @@ section {
     margin-left: 100px;
 }
 
+.dark-mode {
+    background-color: $darker-color;
+    color: $darker-color-text;
+    transition: all 0.3s;
+}
+
+.grey {
+    fill: $darker-color-text;
+}
+
 .cover {
     height: 25em;
     background-image: url("https://raw.githubusercontent.com/scanapi/website/master/assets/images/cover.jpg");

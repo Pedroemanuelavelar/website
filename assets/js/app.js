@@ -1,4 +1,3 @@
-//  Insert darkModeTheme
 function darkModeTheme () {
     const element = document.body;
     element.classList.toggle("dark-mode");
@@ -8,19 +7,23 @@ function darkModeTheme () {
 
 // get value in the LocalStorage
 const nightModeStorage = localStorage.getItem('gmtNightMode')
-const nightModeStorage = document.querySelector('.dark-mode')
+const nightMode = document.querySelector('.dark-mode')
+
 
 // if you have the value in localStorage
 if (nightModeStorage) {
     // activate night mode
     document.documentElement.classList.add('dark-mode')
+
+    // already let toglle marked
+    nigthMode.checked = true;
 }
 
 if (document.documentElement.classList.contains('dark-mode')) {
     // save the theme to localStorage
-    localStorage.setItem('gmtNightMode'. true)
+    localStorage.setItem('gmtNightMode', true)
     return
 }
 
-// else remoove
-localStorage.removeItem('gmtNightMode')
+// else remove
+localStorage.removeItem('gmtNightMode') 

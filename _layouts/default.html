@@ -8,7 +8,6 @@
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg+xml" href="{{"/assets/images/scanapi.svg" | relative_url }}">
     <link rel="stylesheet" href="{{"/assets/css/styles.css" | relative_url }}">
-    <script src="{{"/assets/js/app.js" | relative_url }}"></script>
 </head>
 
 <body>
@@ -18,6 +17,10 @@
         {{ content }}
     </div>
     {% include footer.html %}
+
+    <script src="{{"/assets/js/app.js" | relative_url }}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> --> 
+    <!--   -->
 </body>
 
 </html>
